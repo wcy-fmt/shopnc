@@ -1,0 +1,15 @@
+[2018-06-27 15:42:14] /admin/index.php?act=store&op=newshop_add ( act=store&op=newshop_add ) 
+ERR: Db Error: Column 'reg_province' cannot be null
+INSERT  INTO `33hao_member` (member_id,member_name,member_passwd,member_email,reg_province,reg_city,reg_area,member_time,member_login_time,member_old_login_time,member_login_ip,member_old_login_ip,member_truename,member_qq,member_sex,member_avatar,member_qqopenid,member_qqinfo,member_sinaopenid,member_sinainfo,inviter_id) VALUES (NULL,'111','96e79218965eb72c92a549dd5a330112','',NULL,NULL,NULL,'1530085334','1530085334','1530085334','101.90.252.103','101.90.252.103',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
+[2018-06-27 15:42:14] /admin/index.php?act=store&op=newshop_add ( act=store&op=newshop_add ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''111','111','1','1','1530085334','0')' at line 1
+INSERT  INTO `33hao_store` (store_name,member_id,member_name,seller_name,bind_all_gc,store_state,store_time,is_own_shop) VALUES ('111',,'111','111','1','1','1530085334','0')
+[2018-06-27 15:42:14] /admin/index.php?act=store&op=newshop_add ( act=store&op=newshop_add ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ','0','1')' at line 1
+INSERT  INTO `33hao_seller` (seller_name,member_id,store_id,seller_group_id,is_admin) VALUES ('111',,,'0','1')
+[2018-06-27 15:42:14] /admin/index.php?act=store&op=newshop_add ( act=store&op=newshop_add ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''40','0','0','1')' at line 1
+INSERT  INTO `33hao_store_joinin` (seller_name,store_name,member_name,member_id,joinin_state,company_province_id,sc_bail,joinin_year) VALUES ('111','111','111',,'40','0','0','1')
+[2018-06-27 15:42:14] /admin/index.php?act=store&op=newshop_add ( act=store&op=newshop_add ) 
+ERR: Db Error: Column count doesn't match value count at row 1
+INSERT  INTO `33hao_store_extend` (store_id) VALUES ()

@@ -1,0 +1,6 @@
+[2018-06-29 22:09:12] /shop/index.php ( act=buy&op=buy_step2 ) 
+ERR: Db Error: Unknown column 'use_points' in 'field list'
+INSERT  INTO `33hao_order` (order_sn,pay_sn,store_id,use_points,store_name,buyer_id,buyer_name,buyer_email,add_time,payment_code,order_state,order_amount,order_commis_amount,shipping_fee,goods_amount,order_from) VALUES ('1000000000000501','230583625352587004','1','0','spring','4','wlpro','wl_pro@126.com','1530281352','online','10','459','459.00','0','459','1')
+[2018-06-29 22:12:05] /shop/index.php ( act=buy&op=buy_step2 ) 
+ERR: Db Error: Unknown column 'order_commis_amount' in 'field list'
+INSERT  INTO `33hao_order` (order_sn,pay_sn,store_id,use_points,store_name,buyer_id,buyer_name,buyer_email,add_time,payment_code,order_state,order_amount,order_commis_amount,shipping_fee,goods_amount,order_from) VALUES ('1000000000000601','130583625525776004','1','0','spring','4','wlpro','wl_pro@126.com','1530281525','online','10','249','249.00','0','249','1')

@@ -1,0 +1,22 @@
+#nginx 伪静态规则
+rewrite ^/shop/brand.html$ /brand.html;
+rewrite ^/item-([0-9]+)(-?)([0-9]*).html$ /index.php?act=goods&goods_id=$1&id=$2 last;
+rewrite ^/shop/item-([0-9]+)(-?)([0-9]*).html$ /index.php?act=goods&goods_id=$1&id=$2 last;
+rewrite ^/goods-([0-9]+)(-?)([0-9]*).html$ /index.php?act=goods&goods_id=$1&id=$2 last;
+rewrite ^/shop/goods-([0-9]+)(-?)([0-9]*).html$ /index.php?act=goods&goods_id=$1&id=$2 last;
+rewrite ^/groupbuy-([0-9]+)-([0-9]+).html$ /index.php?act=show_groupbuy&op=groupbuy_detail&group_id=$1&id=$2 last;
+rewrite ^/shop/groupbuy-([0-9]+)-([0-9]+).html$ /index.php?act=show_groupbuy&op=groupbuy_detail&group_id=$1&id=$2 last;
+rewrite ^/article-([0-9]+).html$ /index.php?act=article&article_id=$1 last;
+rewrite ^/shop/article-([0-9]+).html$ /index.php?act=article&article_id=$1 last;
+rewrite ^/store-([0-9]+).html$ /index.php?act=show_store&store_id=$1 last;
+rewrite ^/shop/store-([0-9]+).html$ /index.php?act=show_store&store_id=$1 last;
+rewrite ^/shop-([0-9]+).html$ /index.php?act=show_store&store_id=$1 last;
+rewrite ^/shop/shop-([0-9]+).html$ /index.php?act=show_store&store_id=$1 last;
+rewrite ^/activity-([0-9]+)-([0-9]*).html$ /index.php?act=activity&activity_id=$1&nav_id=$2 last;
+rewrite ^/shop/activity-([0-9]+)-([0-9]*).html$ /index.php?act=activity&activity_id=$1&nav_id=$2 last;
+rewrite ^/store_nav-([0-9]+)-([0-9]+).html$ /index.php?act=show_store&store_id=$1&article=$2 last;
+rewrite ^/shop/store_nav-([0-9]+)-([0-9]+).html$ /index.php?act=show_store&store_id=$1&article=$2 last;
+rewrite ^/document-([a-zA-Z_]+).html$ /index.php?act=document&code=$1 last;
+rewrite ^/shop/document-([a-zA-Z_]+).html$ /index.php?act=document&code=$1 last;
+rewrite ^/coupon_info-([0-9]+)-([0-9]+).html$ /index.php?act=coupon_store&op=detail&coupon_id=$1&id=$2 last;
+rewrite ^/shop/coupon_info-([0-9]+)-([0-9]+).html$ /index.php?act=coupon_store&op=detail&coupon_id=$1&id=$2 last;
